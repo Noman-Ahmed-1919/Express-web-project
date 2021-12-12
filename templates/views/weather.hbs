@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,400;1,100;1,900&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container-fluid main_menu">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"> <i class="far fa-snowflake"></i> Pakistan Weather <i class="far fa-snowflake"></i> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/weather">Weather</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                      </li>
+                  
+                  </ul>
+                 
+                </div>
+              </nav>
+
+        </div>
+
+    </div>    
+    </div>
+
+
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+<div class="main_content">
+  <form class="temp_form">
+    <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+    <input type="submit" value="search" id="submitbtn">
+  </form>
+</div>
+
+<div class="tempinfo">
+  <div class="toplayer">
+<p id="day">Friday</p>
+<p id="todaydata">11 DEC</p>
+  </div>
+  <div class="mainlayer">
+    <p id="city_name">Get Output here</p>
+    <div class="middle_layer data_hide">
+      <p id="temp"><span>0</span><sup>o</sup>C</p>
+      <p id="tempstatus"> <i class="fa fa-cloud" aria-hidden="true"></i> </p>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+                </div>
+                </div>
+                </div>
+
+
+              {{> footer}}
+
+              <script src="jss/main.js"></script>
+
+</body>
+</html>
